@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Background Color</title>
+    <style>
+        /* For Chrome, Safari, Opera, and Edge */
+        input[type="range"]::-webkit-slider-runnable-track {
+            background: rgb(255, 0, 0);
+            height: 0.5rem;
+        }
+
+        /* For Firefox
+        input[type="range"]::-moz-range-track {
+            background: rgb(0, 0, 0);
+            height: 0.5rem;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <input type="range" min="0" max="100" value="50">
+</body>
+
+</html>

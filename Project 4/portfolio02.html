@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    @media screen and (max-width:1059px) {
+        body>.head-sec {
+            justify-content: center;
+        }
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Epilogue;
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26.5px 42px;
+    }
+
+    ul {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+    }
+
+    ul>li>a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .head-sec {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 68px;
+    }
+    
+    .HC {
+        padding: 58px 0px 58px 56px;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .HC>h6 {
+        font-size: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .HC>h1 {
+        font-size: 68px;
+        font-weight: 600;
+        width: 620px;
+        height: 70px;
+    }
+
+    .HC>p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        padding-bottom: 24px;
+    }
+
+    .HI {
+        width: 480px;
+        height: 360px;
+    }
+
+    button {
+        width: 211px;
+        height: 78px;
+        background: #2D2D2D;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .HI>img {
+        width: 480px;
+        height:auto;
+        padding: 0px 56px 0px 0px;
+        object-fit: fill;
+    }
+
+    @media screen and (max-width:855px) {
+        body>.logobar {
+            justify-content: center;
+        }
+    }
+
+    .logobar {
+        width: 100%;
+        padding: 41.5px 68px;
+        gap: 80px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .l1 {
+        width: 80px;
+        object-fit: contain;
+    }
+
+
+    @media screen and (max-width: 1251px) {
+        body>.skill-sec {
+            justify-content: center;
+        }
+    }
+
+    .skill-sec {
+        gap: 24px;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 42px 24px 42px 24px;
+    }
+
+    img.sl1 {
+        width: 124px;
+        height: 124px;
+    }
+
+    .box>h3 {
+        font-size: 27px;
+        font-weight: 600;
+        line-height: 42px;
+        padding: 42px 0 12px 0;
+    }
+
+    .box>p {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .box {
+        width: 394.67px;
+        height: 429px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 64px 42px;
+    }
+
+    div.galleery-sec {
+        padding: 42px 24px;
+    }
+
+    @media screen and (max-width: 1251px) {
+        body>.galleery-sec {
+            justify-content: center;
+        }
+    }
+
+    .galleery-sec>h2 {
+        padding-bottom: 42px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+
+    }
+
+    .cards-sec {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .galleery-sec>.cards-sec>.c>h5 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        padding-bottom: 8px;
+        padding-top: 24px;
+    }
+
+    .galleery-sec>.cards-sec>.c>img {
+        width: 394.67px;
+        height: 330px;
+    }
+
+    div.c>p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .review-sec>h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: center;
+        padding: 42px 0px 42px 0px;
+    }
+
+    div.cards {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0px 24px 42px 24px;
+    }
+
+    .box2 {
+        background: #F3F3F3;
+        height: 330px;
+        width: 394.67px;
+        padding: 42px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        gap: 68px;
+    }
+
+    .box2>p {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+
+    div.c-r {
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    div.ppf {
+        padding: 0px 0px 38px 0px;
+    }
+
+    div.review {
+        padding-left: 16px;
+    }
+
+    div.review>img {
+        padding-bottom: 11px;
+    }
+
+    div.review>.name {
+        line-height: 30px;
+    }
+
+    div.review>.name>h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    div.review>.name>p {
+        font-size: 17px;
+        font-weight: 400;
+        color: #2D2D2D;
+    }
+
+    .contect-sec {
+        padding: 42px 24px 86px 24px;
+    }
+
+    .contect-sec>h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        padding-bottom: 24px;
+    }
+
+    div.csc {
+        justify-content: space-between;
+        display: flex;
+        gap: 142px;
+    }
+
+    .contect-sec>.csc>.ci>p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    div.sl {
+        padding-top: 42px;
+    }
+
+    div.b {
+        padding-top: 24px;
+    }
+
+    div.tb1 {
+        padding-bottom: 12px;
+    }
+
+    input#My-name {
+        outline: none;
+        border: none;
+        width: 520px;
+        height: 59px;
+        min-width: 320px;
+        max-width: 520px;
+        padding: 16px 24px 16px 24px;
+        gap: 10px;
+        background: #F3F3F3;
+
+    }
+
+    input#My-email {
+        outline: none;
+        border: none;
+        width: 520px;
+        height: 59px;
+        min-width: 320px;
+        max-width: 520px;
+        padding: 16px 24px 16px 24px;
+        gap: 10px;
+        background: #F3F3F3;
+    }
+</style>
+
+<body>
+    <nav>
+        <h2>Logo</h2>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Content</a></li>
+        </ul>
+    </nav>
+    <div class="head-sec">
+        <!-- Head Section = head-sec-->
+        <div class="HC">
+            <!-- Head content = HC -->
+            <h6>Branding | Image making</h6>
+            <h1>Visual Designer</h1>
+            <p>This is a template Figma file, turned into code using Anima. <br> Learn more at AnimaApp.com</p>
+            <button>content</a></button>
+        </div>
+        <div class="HI">
+            <!-- head image = HI -->
+            <img src="HeaderImage 1.png" alt="">
+        </div>
+    </div>
+    <div class="logobar">
+        <img src="google.png" alt="Logo of google " class="l1" style="width: 116.07px;
+        height: 38.21px;">
+        <img src="nike.png" alt="logo of nike shoes brand" class="l1" style="width: 86.42px;
+        height: 30.74px;">
+        <img src="samsung.png" alt="Logo of samsuns brand of mobile phones" class="l1" style="width: 113.11px;
+        height: 17.41px;">
+        <img src="apple.png" alt="Logo of Appale brand of mobile phones" class="l1" style="width: 38.11px;
+        height: 46.83px;">
+        <img src="addidas.png" alt="logo of addidas shoes brand" class="l1" style="width: 64.94px;
+        height: 43.67px;">
+    </div>
+    <div class="skill-sec">
+        <!-- Skill Section = skill-sec  -->
+        <div class="box">
+            <img src="Skills Card Icon.png" class="sl1" alt="skill card 01">
+            <h3>Product Design</h3>
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+        <div class="box">
+            <img src="Skills Card Icon (2).png" class="sl1" alt="skill card 02">
+            <h3>Visual Design</h3>
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+        <div class="box">
+            <img src="Skills Card Icon (1).png" class="sl1" alt="skill card 03">
+            <h3>Art Direction</h3>
+            <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+    </div>
+    <div class="galleery-sec">
+        <!-- Galleery Section = galleery-sec -->
+        <h2>Latest work</h2>
+        <div class="cards-sec">
+            <!-- Card section = card-sec  -->
+            <div class="c">
+                <!-- card = c  -->
+                <img src="Image (6).png" alt="product 1">
+                <h5>Project title</h5>
+                <p>UI, Art drection</p>
+            </div>
+            <div class="c">
+                <!-- card = c  -->
+                <img src="Image (1).png" alt="product 2">
+                <h5>Project title</h5>
+                <p>UI, Art drection</p>
+            </div>
+            <div class="c">
+                <!-- card second = cs  -->
+                <img src="Image (2).png" alt="product 3">
+                <h5>Project title</h5>
+                <p>UI, Art drection</p>
+            </div>
+            <div class="c">
+                <!-- card = c  -->
+                <img src="Image (3).png" alt="product 4">
+                <h5>Project title</h5>
+                <p>UI, Art drection</p>
+            </div>
+            <div class="c">
+                <!-- card = c  -->
+                <img src="Image (4).png" alt="product 5">
+                <h5>Project title</h5>
+                <p>UI, Art drection</p>
+            </div>
+            <div class="c">
+                <!-- card second = cs  -->
+                <img src="Image (5).png" alt="product 6">
+                <h5>Project title</h5>
+                <p>UI, Art drection</p>
+            </div>
+        </div>
+    </div>
+    <div class="review-sec">
+        <!-- review Section = review-sec -->
+        <h2>Testimonial</h2>
+        <div class="cards">
+            <div class="box2">
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="c-r">
+                    <!-- client-review -->
+                    <div class="ppf">
+                        <img src="Client Image.png" alt="Client Image">
+                    </div>
+                    <div class="review">
+                        <img src="Stars.png" alt="Stars">
+                        <div class="name">
+                            <h3>Gemma Nolen</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="c-r">
+                    <!-- client-review -->
+                    <div class="ppf">
+                        <img src="Client Image.png" alt="Client Image">
+                    </div>
+                    <div class="review">
+                        <img src="Stars.png" alt="Stars">
+                        <div class="name">
+                            <h3>Gemma Nolen</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="c-r">
+                    <!-- client-review -->
+                    <div class="ppf">
+                        <img src="Client Image.png" alt="Client Image">
+                    </div>
+                    <div class="review">
+                        <img src="Stars.png" alt="Stars">
+                        <div class="name">
+                            <h3>Gemma Nolen</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="c-r">
+                    <!-- client-review -->
+                    <div class="ppf">
+                        <img src="Client Image.png" alt="Client Image">
+                    </div>
+                    <div class="review">
+                        <img src="Stars.png" alt="Stars">
+                        <div class="name">
+                            <h3>Gemma Nolen</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="c-r">
+                    <!-- client-review -->
+                    <div class="ppf">
+                        <img src="Client Image.png" alt="Client Image">
+                    </div>
+                    <div class="review">
+                        <img src="Stars.png" alt="Stars">
+                        <div class="name">
+                            <h3>Gemma Nolen</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="c-r">
+                    <!-- client-review -->
+                    <div class="ppf">
+                        <img src="Client Image.png" alt="Client Image">
+                    </div>
+                    <div class="review">
+                        <img src="Stars.png" alt="Stars">
+                        <div class="name">
+                            <h3>Gemma Nolen</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contect-sec">
+        <!-- Contect Section = contect-sec -->
+        <h2>Lets work together</h2>
+        <div class="csc">
+            <!-- Contect Section content = csc  -->
+            <div class="ci">
+                <!-- Contect Informatin = ci  -->
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a
+                    template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="sl">
+                    <!-- social links = sl  -->
+                    <img src="Social Links.png" alt="Social Links">
+                </div>
+            </div>
+            <div class="cf">
+                <!-- Contect Form = cf  -->
+                <form>
+                    <div class="tb1">
+                        <!-- text box = tb  -->
+                        <input type="text" id="My-name" placeholder="Name" required>
+                    </div>
+                    <div class="tb2">
+                        <!-- text box = tb  -->
+                        <input type="email" id="My-email" placeholder="E-mail" required>
+                    </div>
+                    <div class="b">
+                        <!-- Button = b  -->
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

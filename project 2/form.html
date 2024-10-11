@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins'>
+</head>
+<style>
+    .img {
+        width: 100%;
+        height: 100vh;
+        background-image: url(bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box {
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        padding-top: 10px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 300px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    input {
+        width: 350px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        margin-bottom: 20px;
+        outline: none;
+        margin-left: 30px;
+        border-bottom: 2px solid rgba(101, 98, 98, 0.351);
+        /* background-color: black; */
+    }
+
+    label {
+        color: gray;
+        padding-left: 30px;
+        display: inline;
+
+    }
+
+    button {
+        background-color: #bbcbc595;
+        color: black;
+        font-weight: bold;
+        padding: 14px 20px;
+        border-radius: 40px;
+        margin: 10px 60px;
+        border: none;
+        cursor: pointer;
+        width: 70%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .div {
+        margin-top: 30px;
+    }
+    
+</style>
+
+<body class="body">
+    <div class="img">
+
+        <div class="box">
+            <h2 class="heading">REGISTER</h2>
+        <hr>
+        <form action="backend.eng">
+            <div class="div">
+                <label for="myname">Username</label>
+                <div class="first">
+                    <input type="text" id="myname" required>
+                </div>
+                <label for="myemail">E-mail</label>
+                <div class="second">
+                    <input type="email" id="myemail" required>
+                </div>
+                <label for="mypass">Password</label>
+                <div class="third">
+                    <input type="text" name="Pass" id="mypass" required>
+                </div>
+                <label for="mypassword">Conform Password</label>
+                <div class="fourth">
+                    <input type="text" name="Password" id="mypassword" required>
+                </div>
+                <div>
+                    <button type="submit" >Sign Up</button>
+                </div>
+                <div>
+                    <p style="text-align: center;">Have An Account! <a href="#">Login Here</a></p>
+                </div>
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>

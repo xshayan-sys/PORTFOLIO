@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins'>
+</head>
+<style>
+
+    .body {
+        background-image: url(bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box {
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        padding-top: 10px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    input#myname {
+        width: 350px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+        outline: none;
+        margin-left: 30px;
+        border-bottom: 2px solid rgba(101, 98, 98, 0.351);
+        /* background-color: black; */
+    }
+
+    input#myemail {
+        width: 350px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        padding-left: 10;
+        padding-right: 0;
+        margin-bottom: 20px;
+        outline: none;
+        margin-left: 30px;
+        border-bottom: 2px solid rgba(101, 98, 98, 0.351);
+    }
+
+    input#mypass {
+        width: 350px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+        outline: none;
+        margin-left: 30px;
+        border-bottom: 2px solid rgba(101, 98, 98, 0.351);
+    }
+
+    input#mypassword {
+        width: 350px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+        outline: none;
+        margin-left: 30px;
+        border-bottom: 2px solid rgba(101, 98, 98, 0.351);
+
+    }
+
+    label {
+        color: rgb(255, 0, 0);
+        padding-left: 30px;
+        display: inline;
+
+    }
+
+    button {
+        background-color: #bbcbc595;
+        color: black;
+        font-weight: bold;
+        padding: 14px 20px;
+        border-radius: 40px;
+        margin: 10px 60px;
+        border: none;
+        cursor: pointer;
+        width: 70%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .div {
+        margin-top: 30px;
+    }
+    
+</style>
+
+<body class="body">
+    <div class="box">
+        <h2 class="heading">REGISTER</h2>
+        <hr>
+        <form action="backend.eng">
+            <div class="div">
+                <label for="myname"></label>
+                <div class="first">
+                    <input type="text" id="myname" placeholder="User name" required>
+                </div>
+                <label for="myemail"></label>
+                <div class="second">
+                    <input type="email" id="myemail" placeholder="E mail" required>
+                </div>
+                <label for="mypass"></label>
+                <div class="third">
+                    <input type="text" name="Pass" id="mypass" placeholder="Password" required>
+                </div>
+                <label for="mypassword"></label>
+                <div class="fourth">
+                    <input type="text" name="Password" id="mypassword" placeholder="Conform Password" required>
+                </div>
+                <div>
+                    <button type="submit" >Sign Up</button>
+                </div>
+                <div>
+                    <p style="text-align: center;">Have An Account! <a href="#">Login Here</a></p>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
