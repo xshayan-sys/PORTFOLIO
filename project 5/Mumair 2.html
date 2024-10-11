@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #1E1E1E;
+        color: #FFFFFF;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        height: 67px;
+        width: 1420px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 61px;
+    }
+
+    ul {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+    }
+
+    ul>li>a {
+        text-decoration: none;
+        padding: 10px 14px 10px 14px;
+        font-family: Poppins;
+        color: #FFFFFF;
+    }
+
+    a:hover {
+        color: #FD6F00;
+    }
+
+    nav>img {
+        width: 67px;
+        height: 67px;
+    }
+
+    nav>.left>h5::first-letter {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.51px;
+
+    }
+
+    nav>.left>h5 {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 58.51px;
+        padding: 4px 0px 4px 20px;
+    }
+
+    nav>.left {
+        display: flex;
+    }
+
+    .b {
+        background: #FD6F00;
+        font-family: Poppins;
+        width: 188px;
+        height: 52px;
+        border-radius: 5px;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 31.5px;
+        letter-spacing: 0.03em;
+        display: inline;
+        color: #FFFFFF;
+    }
+
+    .Header>.headerleft>h6 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0.03em;
+        padding-top: 97px;
+    }
+
+    .Header>.headerleft>h5 {
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        color: #FD6F00;
+        padding-top: 8px;
+    }
+
+    .Header {
+        margin: auto;
+        width: 1400px;
+        height: 686.48px;
+        margin-top: 120px;
+        justify-content: start;
+        display: flex;
+        gap: 148px;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .Header>.headerleft>h1 {
+        font-family: Poppins;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 120px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+
+    .Header>.headerleft>.heading>h1 {
+        font-family: Poppins;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 120px;
+        letter-spacing: 0.03em;
+        text-align: end;
+        /* padding-left: 230px; */
+    }
+
+    .Header>.headerleft>p {
+        font-family: Poppins;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 31.5px;
+        letter-spacing: 0.03em;
+        text-align: justified;
+        padding-top: 22px;
+    }
+
+    .button2 {
+        padding-top: 22px;
+    }
+
+    .logobar {
+        margin: auto;
+        text-align: end;
+        width: 205px;
+        height: 32.48px;
+        margin-left: 1268px;
+        margin-right: 447px;
+    }
+
+    .headerright>img {
+        width: 538px;
+        height: 617.24px;
+        left: 862px;
+    }
+
+    .container {
+        position: relative;
+        width: 300px;
+        /* Adjust as needed */
+    }
+
+    .image1 {
+        
+        width: 538px;
+        height: 617.24px;
+    }
+
+    .image2 {
+        position: absolute;
+        top: 78px;
+        left: 74px;
+        width: 374px;
+        height: 83px;
+        opacity: 60%;
+        /* Adjust opacity as needed */
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="Subtract.png" alt="brand logo">
+            <h5>Mumair</h5>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="b">Downlaod CV</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Header" id="Home">
+        <div class="headerleft">
+            <h6>Hi I am </h6>
+            <h5>Muhammad Umair </h5>
+            <h1>UI & UX</h1>
+            <div class="heading">
+                <h1>Designer</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec
+                morbi convallis pretium. Turpis tempus pharetra</p>
+            <!-- <a href="#">Hire Me</a> -->
+            <div class="button2"></div>
+            <button class="b">Hire Me</button>
+        </div>
+
+        <div class="container">
+            <img src="Group 2.png" alt="a piture of a guy with red hatt and yellow winters sweter" class="image1">
+            <img src="Rectangle 4.png" alt="Second Image" class="image2">
+        </div>
+    </div>
+    <div class="logobar">
+        <img src="Group 39.png" alt="social media links">
+    </div>
+</body>
+
+</html>

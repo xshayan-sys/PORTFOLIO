@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mumair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+<style>
+  .container {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  body {
+    background: #1e1e1e;
+    color: #ffffff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    margin-top: 61px;
+    /* height: 67px; */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  .left {
+    display: flex;
+    gap: 20px;
+  }
+
+  ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+  }
+
+  ul>li>a {
+    text-decoration: none;
+    padding: 10px 14px 10px 14px;
+    font-family: Poppins;
+    color: #ffffff;
+  }
+
+  a:hover {
+    color: #fd6f00;
+  }
+
+  nav>.left>h5::first-letter {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+  }
+
+  nav>.left>h5 {
+    letter-spacing: 0.5px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.51px;
+  }
+
+  .button {
+    background: #fd6f00;
+    font-family: Poppins;
+    width: 188px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    display: inline;
+    color: #ffffff;
+  }
+
+  .container>.Header>.headerleft>h6 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    padding-top: 97px;
+  }
+
+  .container>.Header>.headerleft>h5 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #fd6f00;
+    padding-top: 8px;
+  }
+
+  .container>.Header {
+    width: 1400px;
+    height: 686.48px;
+    justify-content: space-between;
+    display: flex;
+    gap: 148px;
+    padding-top: 120px;
+  }
+
+  .container>.Header>.headerleft>h1 {
+    font-family: Poppins;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+
+  .container>.Header>.headerleft>.heading>h1 {
+    font-family: Poppins;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0.03em;
+    text-align: end;
+  }
+
+  .container>.Header>.headerleft>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 7px;
+    width: 698px;
+    height: 101px;
+  }
+
+  .button2 {
+    padding-top: 22px;
+  }
+
+  .logobar {
+    text-align: end;
+    width: 205px;
+    height: 32.48px;
+  }
+
+  .first-right>img {
+    width: 538px;
+    height: 617.24px;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  .first-right {
+    width: fit-content;
+    position: relative;
+  }
+
+  .orange-slider {
+    width: 374px;
+    height: 83px;
+    background-color: #fd6f0099;
+    position: absolute;
+    top: 78px;
+    right: 82px;
+  }
+
+  .container>nav>.right>.button>#button2 {
+    background: #000;
+  }
+
+  /* .container>.Header>.first-right>.social-links {
+    align-items: center;
+  } */
+
+  input#slider {
+    width: 753px;
+    height: 32px;
+    color: orange;
+    border: 3px solid #FD6F00
+  }
+
+  input[type="range"] {
+    accent-color: #FD6F00;
+  }
+
+  .container>.aboutme-sec {
+    justify-content: space-between;
+    display: flex;
+    gap: 33px;
+  }
+
+  .container>.aboutme-sec>.right2>h2 {
+    font-family: Poppins;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 97.5px;
+    letter-spacing: 0.03em;
+    padding-top: 55px;
+  }
+
+  .container>.aboutme-sec>.right2>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    padding-top: 12px;
+  }
+
+  .container>.aboutme-sec>.right2>.range>form>h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+  }
+
+  .container>.aboutme-sec>.right2>.range>form {
+    padding-top: 15px;
+  }
+
+  .orange-slider2 {
+    background-color: #fd6f0099;
+    position: absolute;
+    width: 374px;
+    height: 83px;
+    top: 1106px;
+    left: 395px;
+  }
+
+  .container>.services-sec {
+    padding-top: 139px;
+  }
+
+  .container>.services-sec>h3 {
+    font-family: Poppins;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 97.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  .container>.aboutme-sec {
+    padding-top: 69.52px;
+  }
+
+  .container>nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #1E1E1E;
+  }
+
+  .container>.services-sec>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 15px;
+    width: 932px;
+    height: 101px;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+  .box {
+    width: 330px;
+    height: auto;
+    border-radius: 14px;
+    background: white;
+    padding: 57px 18px 10px 18px;
+  }
+
+  .container>.services-sec>.boxes {
+    justify-content: space-between;
+    display: flex;
+    gap: 31px;
+    padding-bottom: 24px;
+  }
+
+  .container>.services-sec>.boxes>.box>img {
+    justify-content: flex-start;
+    padding-bottom: 26px;
+    border: 0.5px
+  }
+
+  .container>.services-sec>.boxes>.box>h5 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-align: start;
+    color: #000000;
+    padding-bottom: 15px;
+  }
+
+  .container>.services-sec>.boxes>.box>p {
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #000;
+    width: 290px;
+    height: 120px;
+
+  }
+
+  .container>.projects-sec {
+    padding-top: 139px;
+  }
+
+  .container>.projects-sec>h5 {
+    font-family: Poppins;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 97.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  .container>.projects-sec>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 921px;
+    height: 78px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 59px;
+  }
+
+  .container>.projects-sec>.groups {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 106px;
+  }
+
+  .container>.projects-sec>.groups>.button01 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 70px;
+    height: 56px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    border: 0.4px;
+  }
+
+  .container>.projects-sec>.groups>.button02 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 108px;
+    height: 56px;
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 0.4px;
+  }
+
+  .container>.projects-sec>.groups>.button03 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 190px;
+    height: 56px;
+    top: 257px;
+    left: 451px;
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    border-radius: 12px;
+    border: 0.4px;
+    opacity: 0px;
+    background: #FD6F00;
+    color: white;
+  }
+
+  .container>.projects-sec>.groups>.button04 {
+    width: 185px;
+    height: 56px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    border: 0.4px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  .container>.projects-sec>.groups>.button05 {
+    width: 235px;
+    height: 56px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    border: 0.4px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  .container>.projects-sec>.cards>.first-card>h6 {
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FD6F00;
+    padding-top: 37px;
+  }
+
+  .container>.projects-sec>.cards>.first-card>h4 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .container>.projects-sec>.cards {
+    justify-content: space-between;
+    display: flex;
+    gap: 44px;
+  }
+
+  /* .testimonials-sec>h1 {
+    font-family: Poppins;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 97.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 139px;
+  }
+
+  .testimonials-sec>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+    width: 932px;
+    height: 101px;
+  }
+
+  .testimonials-sec>.review {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 72px;
+    flex-shrink: 0;
+  }
+
+  .testimonials-sec>.review>.review-box {
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    background: white;
+    color: #000;
+    justify-content: space-between;
+    display: flex;
+    gap: 29px;
+    flex-shrink: 0px;
+    }
+
+  .testimonials-sec>.review>.review-box>.ppf {
+    width: 235px;
+    height: 235px;
+    padding: 55px 0px 54px 48px;
+  }
+
+  .testimonials-sec>.review>.review-box>.comment>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.02em;
+    width: 645px;
+    height: 146px;
+    padding: 80px 77px 0px 0px;
+    text-align: left;
+  }
+
+  .testimonials-sec>.review>.review-box>.comment>h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+
+  .testimonials-sec>.review>.review-box>.comment>h6 {
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    letter-spacing: 0.02em;
+  }
+.testimonials-sec>.review{
+    width: 3385px;
+    height: auto;
+  } */
+  .testimonial-sec {
+    width: auto;
+    height: 733px;
+  }
+
+  .testimonial-sec1 {
+    width: auto;
+    height: 733px;
+  }
+
+  .testimonial-sec>h1 {
+    font-family: Poppins;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 97.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 139px;
+  }
+
+  .testimonial-sec>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 932px;
+    height: 101px;
+    padding-top: 15px;
+    margin: auto;
+    padding-bottom: 72px;
+  }
+
+  .flex-item {
+    width: 1087px;
+    height: 344px;
+    background: white;
+    color: #000;
+    /* flex-shrink: 0; */
+    overflow: hidden;
+  }
+
+  .boxes {
+    justify-content: space-between;
+    display: flex;
+
+  }
+
+  .container>.contect-sec>h1 {
+    font-family: Poppins;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 97.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .container>.contect-sec>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  a#Home {
+    width: 65px;
+    height: 32px;
+  }
+
+  a#about-me {
+    width: 104px;
+    height: 32px;
+  }
+
+  img.social-links {
+    align-items: center;
+  }
+
+  .contect-sec {
+    padding-top: 139px;
+    padding-bottom: 139px;
+    /* text-align: center; */
+    width: 932px;
+    height: 337px;
+    justify-content: center;
+    display: grid;
+    margin: auto;
+  }
+
+  .contect-sec>h1 {
+    text-align: center;
+  }
+
+  .container>.contect-sec>.text-boxes {
+    justify-content: space-between;
+    display: flex;
+    gap: 25px;
+  }
+
+  .container>.contect-sec>.text-boxes>.email-box>input#email {
+    width: 627px;
+    height: 75px;
+    border-radius: 14px;
+    border: 1px;
+
+  }
+
+  .container>.contect-sec>.text-boxes>.button-box>input#b1 {
+    width: 222px;
+    height: 75px;
+    border-radius: 14px;
+    background: #FD6F00;
+    color: white;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  input#email::-webkit-input-placeholder {
+    padding-left: 26px;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.03em;
+    text-align: start;
+    color: #797979;
+    width: 178px;
+  }
+
+  .footer>.left>h5::first-letter {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+  }
+
+  .footer>.left>h5 {
+    letter-spacing: 0.5px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.51px;
+  }
+
+  .footer {
+    width: 1925px;
+  }
+
+
+</style>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="left">
+        <img src="Subtract.png" alt="brand logo" />
+        <h5>Mumair</h5>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#Home" id="Home">Home</a></li>
+          <li><a href="#about-me" id="about-me">About Me</a></li>
+          <li><a href="#services" id="services">Services</a></li>
+          <li><a href="#project" id="project">Projects</a></li>
+          <li><a href="#testimonials" id="testimonials">Testimonials</a></li>
+          <li><a href="#contact" id="contact">Contact</a></li>
+        </ul>
+        <button class="button" id="button2">Download Cv</button>
+      </div>
+    </nav>
+    <div class="Header" id="Home">
+      <div class="headerleft">
+        <h6>Hi I am</h6>
+        <h5>Muhammad Umair</h5>
+        <h1>UI & UX</h1>
+        <div class="heading">
+          <h1>Designer</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+          nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
+          tempus pharetra
+        </p>
+        <button class="button">Hire Me</button>
+      </div>
+      <div class="first-right">
+        <img src="Group 2.png" width="485px" height="485px">
+        <div class="orange-slider"></div>
+        <div class="social-links">
+          <img class="social-links" src="Group 39.png" alt="social links" width="205px" height="32.48px">
+        </div>
+      </div>
+    </div>
+    <div class="aboutme-sec" id="about-me">
+      <div class="left2">
+        <img src="Group 7.png" alt="*" width=" 681px" height="675px">
+        <div class="orange-slider2"></div>
+      </div>
+      <div class="right2">
+        <h2>About Me </h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
+          convallis pretium. Turpis tempus pharetra</p>
+        <div class="range">
+          <form action="/action_page.php">
+            <h3>UX</h3>
+            <input type="range" id="slider" name="slider" value="95" min="0" max="100%">
+            <h3>Website Design</h3>
+            <input type="range" id="slider" name="slider" value="85" min="0" max="100%">
+            <h3>App Design </h3>
+            <input type="range" id="slider" name="slider" value="95" min="0" max="100%">
+            <h3>Graphic Design </h3>
+            <input type="range" id="slider" name="slider" value="90" min="0" max="100%">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="services-sec" id="services">
+      <h3>Services</h3>
+      <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
+        convallis pretium</p>
+      <div class="boxes">
+        <div class="box">
+          <img src="Vector (5).png" alt="?">
+          <h5>UI/UX</h5>
+          <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+        </div>
+        <div class="box">
+          <img src="Layer_1.png" width="72px" height="82px" alt="?">
+          <h5>Web Design </h5>
+          <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+        </div>
+        <div class="box">
+          <img src="Group 18.png" width="47px" height="82.47px" alt="?">
+          <h5>App Design</h5>
+          <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+        </div>
+        <div class="box">
+          <img src="Vector (6).png" width="82px" height="70px" alt="?">
+          <h5>Graphic Design </h5>
+          <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+        </div>
+      </div>
+    </div>
+    <div class="projects-sec" id="project">
+      <h5>My Projects</h5>
+      <p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat
+        urna tellus</p>
+      <div class="groups">
+        <button type="button" class="button01">All</button>
+        <button type="button" class="button02">UI/UX</button>
+        <button type="button" class="button03">Web Design</button>
+        <button type="button" class="button04">App Design</button>
+        <button type="button" class="button05">Graphic Design</button>
+      </div>
+      <div class="cards">
+        <div class="first-card">
+          <img src="Group 24.png" alt="template of website fom figma" width="445px" height=" 489px">
+          <h6>Web Design </h6>
+          <h4>AirCalling Landing Page Design </h4>
+        </div>
+        <div class="first-card">
+          <img src="Group 24.png" alt="template of website fom figma" width="445px" height=" 489px">
+          <h6>Web Design </h6>
+          <h4>Business Landing Page Design </h4>
+        </div>
+        <div class="first-card">
+          <img src="Group 24.png" alt="template of website fom figma" width="445px" height=" 489px">
+          <h6>Web Design </h6>
+          <h4>Ecom Web Page Design </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-sec">
+    <h1>Testimonials</h1>
+    <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
+      convallis pretium</p>
+    <div class="boxes">
+      <div class="flex-item item1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus soluta maxime veniam, quaerat doloremque dolor officia id suscipit consectetur. Deserunt, dignissimos! Earum deserunt facere repellat molestiae excepturi temporibus harum vitae?</p>
+      </div>
+      <div class="flex-item item2"></div>
+      <div class="flex-item item3"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contect-sec" id="contact">
+      <h1>Lets Design Together</h1>
+      <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus <br> netus in. Aliquet donec morbi
+        convallis pretium</p>
+      <div class="text-boxes">
+        <div class="email-box">
+          <input type="email" name="Enter Your Email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="button-box">
+          <input type="button" value="Contact Me " id="b1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div class="left">
+      <img src="Subtract.png" alt="brand logo" />
+      <h5>Mumair</h5>
+    </div>
+  </div> -->
+</body>
+
+</html>
