@@ -24,7 +24,14 @@
   body {
     background: #1e1e1e;
     color: #ffffff;
+    /* width: 1920px;
+    height: 5600px; */
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
 
   * {
     margin: 0;
@@ -158,19 +165,8 @@
     height: 32.48px;
   }
 
-  .first-right>img {
-    width: 538px;
-    height: 617.24px;
-    flex-direction: column;
-  }
-
   img {
     object-fit: contain;
-  }
-
-  .first-right {
-    width: fit-content;
-    position: relative;
   }
 
   .orange-slider {
@@ -186,10 +182,6 @@
     background: #000;
   }
 
-  /* .container>.Header>.first-right>.social-links {
-    align-items: center;
-  } */
-
   input#slider {
     width: 753px;
     height: 32px;
@@ -204,7 +196,7 @@
   .container>.aboutme-sec {
     justify-content: space-between;
     display: flex;
-    gap: 33px;
+    gap: 33.24px;
   }
 
   .container>.aboutme-sec>.right2>h2 {
@@ -467,85 +459,6 @@
     gap: 44px;
   }
 
-  /* .testimonials-sec>h1 {
-    font-family: Poppins;
-    font-size: 65px;
-    font-weight: 600;
-    line-height: 97.5px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-top: 139px;
-  }
-
-  .testimonials-sec>p {
-    font-family: Poppins;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 31.5px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin: auto;
-    padding-top: 15px;
-    width: 932px;
-    height: 101px;
-  }
-
-  .testimonials-sec>.review {
-    justify-content: space-between;
-    display: flex;
-    padding-top: 72px;
-    flex-shrink: 0;
-  }
-
-  .testimonials-sec>.review>.review-box {
-    width: auto;
-    height: auto;
-    border-radius: 14px;
-    background: white;
-    color: #000;
-    justify-content: space-between;
-    display: flex;
-    gap: 29px;
-    flex-shrink: 0px;
-    }
-
-  .testimonials-sec>.review>.review-box>.ppf {
-    width: 235px;
-    height: 235px;
-    padding: 55px 0px 54px 48px;
-  }
-
-  .testimonials-sec>.review>.review-box>.comment>p {
-    font-family: Poppins;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 31.5px;
-    letter-spacing: 0.02em;
-    width: 645px;
-    height: 146px;
-    padding: 80px 77px 0px 0px;
-    text-align: left;
-  }
-
-  .testimonials-sec>.review>.review-box>.comment>h5 {
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0.02em;
-  }
-
-  .testimonials-sec>.review>.review-box>.comment>h6 {
-    font-family: Poppins;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 28.5px;
-    letter-spacing: 0.02em;
-  }
-.testimonials-sec>.review{
-    width: 3385px;
-    height: auto;
-  } */
   .testimonial-sec {
     width: auto;
     height: 733px;
@@ -582,11 +495,12 @@
 
   .flex-item {
     width: 1087px;
-    height: 344px;
+    /* height: 344px; */
     background: white;
     color: #000;
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
     overflow: hidden;
+    gap: 62px;
   }
 
   .boxes {
@@ -621,29 +535,40 @@
     gap: 24px;
   }
 
-  a#Home {
-    width: 65px;
-    height: 32px;
+  a#first {
+    width: 93px;
+    height: 52px;
   }
 
-  a#about-me {
-    width: 104px;
-    height: 32px;
+  a#second {
+    width: 132px;
+    height: 52px;
   }
 
-  img.social-links {
-    align-items: center;
+  a#thirt {
+    width: 120px;
+    height: 52px;
+  }
+
+  a#fourth {
+    width: 116px;
+    height: 52px;
+  }
+
+  a#fifth {
+    width: 168px;
+    height: 52px;
+  }
+
+  a#sixth {
+    width: 118px;
+    height: 52px;
   }
 
   .contect-sec {
     padding-top: 139px;
     padding-bottom: 139px;
-    /* text-align: center; */
-    width: 932px;
-    height: 337px;
     justify-content: center;
-    display: grid;
-    margin: auto;
   }
 
   .contect-sec>h1 {
@@ -651,7 +576,7 @@
   }
 
   .container>.contect-sec>.text-boxes {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     gap: 25px;
   }
@@ -690,13 +615,13 @@
     width: 178px;
   }
 
-  .footer>.left>h5::first-letter {
+  .footer>.logo>h5::first-letter {
     font-size: 48px;
     font-weight: 700;
     line-height: 58.51px;
   }
 
-  .footer>.left>h5 {
+  .footer>.logo>h5 {
     letter-spacing: 0.5px;
     font-family: Montserrat;
     font-size: 48px;
@@ -704,11 +629,52 @@
     line-height: 58.51px;
   }
 
-  .footer {
-    width: 1925px;
+  .container>.Header>.first-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 36.76px;
   }
 
+  .first-right {
+    width: fit-content;
+    position: relative;
+  }
 
+  .container>.Header>.first-right>.two {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  img#social-links {
+    background: white;
+  }
+
+  /*  */
+  .footer>.logo {
+    display: flex;
+    gap: 20px;
+    padding-top: 109px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 1920px; */
+
+  }
+
+  .footer>.nav2 {
+    padding-top: 65px;
+  }
+
+  .footer>.social-links {
+    padding-top: 80.52px;
+    padding-bottom: 62px;
+  }
 </style>
 
 <body>
@@ -720,12 +686,12 @@
       </div>
       <div class="right">
         <ul>
-          <li><a href="#Home" id="Home">Home</a></li>
-          <li><a href="#about-me" id="about-me">About Me</a></li>
-          <li><a href="#services" id="services">Services</a></li>
-          <li><a href="#project" id="project">Projects</a></li>
-          <li><a href="#testimonials" id="testimonials">Testimonials</a></li>
-          <li><a href="#contact" id="contact">Contact</a></li>
+          <li><a href="#Home" id="first">Home</a></li>
+          <li><a href="#about-me" id="second">About Me</a></li>
+          <li><a href="#services" id="third">Services</a></li>
+          <li><a href="#project" id="fourth">Projects</a></li>
+          <li><a href="#testimonials" id="fifth">Testimonials</a></li>
+          <li><a href="#contact" id="sixth">Contact</a></li>
         </ul>
         <button class="button" id="button2">Download Cv</button>
       </div>
@@ -746,18 +712,21 @@
         <button class="button">Hire Me</button>
       </div>
       <div class="first-right">
-        <img src="Group 2.png" width="485px" height="485px">
-        <div class="orange-slider"></div>
-        <div class="social-links">
+        <div class="one">
+          <img src="Group 2.png" width=" 538px" height=" 617.24px">
+          <div class="orange-slider"></div>
+        </div>
+        <div class="two">
           <img class="social-links" src="Group 39.png" alt="social links" width="205px" height="32.48px">
         </div>
       </div>
     </div>
     <div class="aboutme-sec" id="about-me">
       <div class="left2">
-        <img src="Group 7.png" alt="*" width=" 681px" height="675px">
+        <img src="Group 7.png" alt="nothing" width="680.76px" height="693.12px">
         <div class="orange-slider2"></div>
       </div>
+
       <div class="right2">
         <h2>About Me </h2>
         <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
@@ -833,7 +802,7 @@
       </div>
     </div>
   </div>
-  <div class="testimonial-sec">
+  <!-- <div class="testimonial-sec">
     <h1>Testimonials</h1>
     <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
       convallis pretium</p>
@@ -844,7 +813,7 @@
       <div class="flex-item item2"></div>
       <div class="flex-item item3"></div>
     </div>
-  </div>
+  </div> -->
   <div class="container">
     <div class="contect-sec" id="contact">
       <h1>Lets Design Together</h1>
@@ -860,12 +829,28 @@
       </div>
     </div>
   </div>
-  <!-- <div class="footer">
-    <div class="left">
-      <img src="Subtract.png" alt="brand logo" />
-      <h5>Mumair</h5>
+  <div class="container">
+    <div class="footer">
+      <div class="logo">
+        <img src="Subtract.png" alt="brand logo">
+        <h5>Mumair</h5>
+      </div>
+      <div class="nav2">
+        <ul>
+          <li><a href="#Home" id="first">Home</a></li>
+          <li><a href="#about-me" id="second">About Me</a></li>
+          <li><a href="#services" id="third">Services</a></li>
+          <li><a href="#project" id="fourth">Projects</a></li>
+          <li><a href="#testimonials" id="fifth">Testimonials</a></li>
+          <li><a href="#contact" id="sixth">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <img src="Group 39.png" alt="links">
+      </div>
     </div>
-  </div> -->
+  </div>
+  div.
 </body>
 
 </html>
