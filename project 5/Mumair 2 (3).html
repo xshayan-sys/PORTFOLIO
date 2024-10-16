@@ -664,7 +664,6 @@
     line-height: 97.5px;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 139px;
   }
 
   .testimonial-sec>p {
@@ -681,27 +680,30 @@
     padding-bottom: 72px;
   }
 
-  .card {
+  .boxes2 {
+    margin: auto;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    gap: 62px;
+  }
+
+  .box2 {
+    flex-shrink: 0;
     width: 1087px;
     height: 344px;
-    border-radius: 14px;
-    background: white;
     color: black;
-    flex-shrink: 0;
+    background: white;
   }
 
   .testimonial-sec {
-    width: 3385px;
+    width: 1920px;
     height: 733px;
+    padding-top: 139px;
   }
 
-  .boxes2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    overflow: hidden;
-  }
 </style>
 
 <body>
@@ -829,28 +831,17 @@
       </div>
     </div>
   </div>
-  <div class="testimonial-sec">
+  <div class="testimonial-sec" id="testimonials">
     <h1>Testimonials</h1>
     <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
       convallis pretium</p>
-    <div class="boxes2">
-      <div class="card" style="opacity: 20%;">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus soluta maxime veniam, quaerat doloremque
-          dolor officia id suscipit consectetur. Deserunt, dignissimos! Earum deserunt facere repellat molestiae
-          excepturi temporibus harum vitae?</p>
-      </div>
-      <div class="card">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus soluta maxime veniam, quaerat doloremque
-          dolor officia id suscipit consectetur. Deserunt, dignissimos! Earum deserunt facere repellat molestiae
-          excepturi temporibus harum vitae?</p>
-      </div>
-      <div class="card" style="opacity: 20%;">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus soluta maxime veniam, quaerat doloremque
-          dolor officia id suscipit consectetur. Deserunt, dignissimos! Earum deserunt facere repellat molestiae
-          excepturi temporibus harum vitae?</p>
-      </div>
-    </div>
+     <div class="boxes2">
+      <div class="box2"></div>
+      <div class="box2"></div>
+      <div class="box2"></div>
+     </div>
   </div>
+
   <div class="container">
     <div class="contect-sec" id="contact">
       <h1>Lets Design Together</h1>
@@ -865,8 +856,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
     <div class="footer">
       <div class="logo">
         <img src="Subtract.png" alt="brand logo">
