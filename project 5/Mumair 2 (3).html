@@ -210,6 +210,8 @@
     line-height: 97.5px;
     letter-spacing: 0.03em;
     padding-top: 55px;
+    width: 330px;
+    height: 98px;
   }
 
   .container>.aboutme-sec>.right2>p {
@@ -219,6 +221,8 @@
     line-height: 31.5px;
     letter-spacing: 0.03em;
     padding-top: 12px;
+    width: 756px;
+    height: 101px;
   }
 
   .container>.aboutme-sec>.right2>.range>form>h3 {
@@ -692,16 +696,80 @@
 
   .box2 {
     flex-shrink: 0;
-    width: 1087px;
+    width: 1088px;
     height: 344px;
     color: black;
     background: white;
+    border-radius: 14px;
   }
 
   .testimonial-sec {
     width: 1920px;
     height: 733px;
     padding-top: 139px;
+    margin: auto;
+  }
+
+  .box2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+  }
+
+  .clint-img2 {
+    padding: 55px 0 54px 48px;
+    width: 235px;
+    height: 235px;
+  }
+
+  /* .comment2>p>span {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: justified;
+    color: #FD6F00;
+  } */
+  .comment2>p {
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    width: 698px;
+    height: 146px;
+    padding: 80px 77px 0 0;
+  }
+
+  .comment2>h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    width: 75px;
+    height: 36px;
+  }
+
+  .comment2>h6 {
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    width: 41px;
+    height: 29px;
+  }
+
+  .testimonial-sec>.slider {
+    width: 255px;
+    height: 16px;
+    margin: auto;
+    padding-top: 87px;
   }
 
 </style>
@@ -710,7 +778,7 @@
   <div class="container">
     <nav>
       <div class="left">
-        <img src="Subtract.png" alt="brand logo" />
+        <img src="Subtract.png" alt="brand logo">
         <h5>Mumair</h5>
       </div>
       <div class="right">
@@ -725,6 +793,7 @@
         <button class="button" id="button2">Download Cv</button>
       </div>
     </nav>
+    <!--  -->
     <div class="Header" id="Home">
       <div class="headerleft">
         <h6>Hi I am</h6>
@@ -750,10 +819,12 @@
         </div>
       </div>
     </div>
+    <!--  -->
     <div class="aboutme-sec" id="about-me">
       <div class="left2">
-        <img src="Group 7.png" alt="nothing" width="680.76px" height="693.12px">
+        <img src="Group 7.png" alt="nothing" style="width: 681px; height: 675px;">
         <!-- <div class="orange-slider2"></div> -->
+        <!-- width="680.76px" height="693.12px" -->
       </div>
 
       <div class="right2">
@@ -761,9 +832,10 @@
         <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
           convallis pretium. Turpis tempus pharetra</p>
         <div class="range">
-          <form action="/action_page.php">
+          <form>
             <h3>UX</h3>
-            <input type="range" id="slider" name="slider" value="95" min="0" max="100%">
+            <input type="range" id="slider" name="slider" value="95" min="0" max="100%"
+              style=" width: 753px; height: 32px;">
             <h3>Website Design</h3>
             <input type="range" id="slider" name="slider" value="85" min="0" max="100%">
             <h3>App Design </h3>
@@ -774,6 +846,7 @@
         </div>
       </div>
     </div>
+    <!--  -->
     <div class="services-sec" id="services">
       <h3>Services</h3>
       <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
@@ -801,6 +874,7 @@
         </div>
       </div>
     </div>
+    <!--  -->
     <div class="projects-sec" id="project">
       <h5>My Projects</h5>
       <p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat
@@ -831,21 +905,72 @@
       </div>
     </div>
   </div>
+  <!--  -->
   <div class="testimonial-sec" id="testimonials">
     <h1>Testimonials</h1>
     <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi
       convallis pretium</p>
-     <div class="boxes2">
-      <div class="box2"></div>
-      <div class="box2"></div>
-      <div class="box2"></div>
-     </div>
+    <div class="boxes2">
+      <div class="box2" style="opacity: 0.2;">
+        <div class="clint-img2">
+          <img src="Ellipse 11.png" alt="cllint profile img">
+        </div>
+        <div class="comment2">
+          <p>
+            <!-- <span>"</span> -->
+            Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque
+            mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+            ultrices.
+            <!-- <span>"</span> -->
+          </p>
+          <h2>Name</h2>
+          <h6>CEO</h6>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="clint-img2">
+          <img src="Ellipse 10.png" alt="cllint profile img">
+        </div>
+        <div class="comment2">
+          <p>
+            <!-- <span>"</span> -->
+            Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque
+            mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+            ultrices.
+            <!-- <span>"</span> -->
+          </p>
+          <h2>Name</h2>
+          <h6>CEO</h6>
+        </div>
+      </div>
+      <div class="box2" style="opacity: 0.2;">
+        <div class="clint-img2">
+          <img src="Ellipse 11.png" alt="cllint profile img">
+        </div>
+        <div class="comment2">
+          <p>
+            <!-- <span>"</span> -->
+            Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque
+            mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo
+            ultrices.
+            <!-- <span>"</span> -->
+          </p>
+          <h2>Name</h2>
+          <h6>CEO</h6>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <img src="Group 35.png" id="bar" alt="">
+    </div>
   </div>
-
+  <!--  -->
   <div class="container">
+    <!--  -->
     <div class="contect-sec" id="contact">
       <h1>Lets Design Together</h1>
-      <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus <br> netus in. Aliquet donec morbi
+      <p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus <br> netus in. Aliquet donec
+        morbi
         convallis pretium</p>
       <div class="text-boxes">
         <div class="email-box">
