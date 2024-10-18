@@ -6,30 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section class="first">
-        <nav class="navbar">
-            <div class="left">
-                <div class="navbar-logo">
-                    <img src="Logo.png" alt="Shopify Logo">
+    <nav class="navbar">
+        <div class="left">
+            <div class="navbar-logo">
+                <img src="Logo.png" alt="Shopify Logo">
+            </div>
+            <div class="menu">
+                <ul class="navbar-menu">
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">What's new</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-buttons">
+            <a href="#" class="login">Log in</a>
+            <a href="#" class="start-free-trial">Start free trial</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="frame1">
+            <div class="top1">
+                <h1>Start for free, then enjoy <br> $1/month for 3 months</h1>
+            </div>
+            <div class="mid1">
+                <p>Try Shopify free for 3 days, no credit card required</p>
+            </div>
+            <div class="last1">
+                <div class="input-container">
+                    <input type="email" id="button" placeholder="Enter your email address" required>
+                    <button>Start free trial</button>
                 </div>
-                <div>
-                    <ul class="navbar-menu">
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">What's new</a></li>
-                    </ul>
+                <div class="text1">
+                    <p>By entering your email, you agree to receive marketing emails from Shopify.</p>
                 </div>
             </div>
-            <div class="navbar-buttons">
-                <a href="#" class="login">Log in</a>
-                <a href="#" class="start-free-trial">Start free trial</a>
-            </div>
-        </nav>
-    </section>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .input-container {
+            position: relative;
+            width: 300px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px 50px 10px 10px; /* Extra padding for the button */
+        }
+
+        .input-container button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .input-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Input with Button</title>
+</head>
+<body>
+
+<div class="input-container">
+    <input type="text" placeholder="Type something...">
+    <button>Go</button>
+</div>
+
+</body>
+</html>
