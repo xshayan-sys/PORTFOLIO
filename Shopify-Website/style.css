@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
     border-bottom: 2px solid lightgray;
     /* width: 1400px;
     height: 72px; */
-    gap: 0px;
+    gap: 376.62px;
 }
 
 .navbar-logo img {
@@ -31,10 +31,9 @@ body::-webkit-scrollbar {
 .navbar-menu {
     display: flex;
     list-style: none;
-    width: 828.62px;
+    /* width: 828.62px; */
     gap: 32px;
     padding: 24px 0;
-
 }
 
 .navbar-menu a {
@@ -111,15 +110,6 @@ body {
     width: 1220px;
 }
 
-.mid1 {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.44px;
-    text-align: center;
-    width: 1220px;
-}
-
 .frame1 {
     margin-top: 68px;
     display: flex;
@@ -129,11 +119,10 @@ body {
 
 .input-container {
     position: relative;
-    width: 300px;
-    /* padding: 0 361px; */
     align-items: center;
-    display: grid;
-    left: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
@@ -147,7 +136,7 @@ input[type="email"] {
 
 .input-container button {
     position: absolute;
-    left: 331px;
+    left: 692px;
     top: 5px;
     width: 162px;
     height: 52px;
@@ -386,13 +375,11 @@ h6#zx {
 
 button#try {
     width: 326.67px;
-    /* height: 52px; */
     padding: 12px 24px 12px 24px;
     border-radius: 30px;
     border: 1px;
     background: #000;
     color: white;
-    /*  */
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -401,7 +388,16 @@ button#try {
 }
 
 img#arrow {
-    padding: 5px 0 0 5px;
+    /* padding: 5px 0 0 5px; */
+    width: 16px;
+    height: 16px;
+}
+
+.navbar-menu>li {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }
 
 .gap {
@@ -477,8 +473,7 @@ p#tick-contant {
     display: flex;
     justify-content: space-between;
     width: 293px;
-    /* 264px */
-    padding: 12px 24px 12px 24px;
+    padding: 12px 24px;
     gap: 12px;
     border-radius: 30px;
     border: 2px solid;
@@ -526,7 +521,7 @@ p#tick-contant {
     flex-direction: column;
     gap: 24px;
     width: 287px;
-    height: 214px;
+    height: 238px;
 }
 
 #features-h2 {
@@ -831,10 +826,8 @@ p#tick-contant {
 }
 
 .sec5-box1 {
-    /* width: 912px; */
-    /* height: 128px; */
     padding: 50px;
-    border-bottom: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF;
     justify-content: space-between;
     display: flex;
     gap: 12px;
@@ -870,6 +863,20 @@ p#tick-contant {
     text-align: left;
 }
 
+.sec6-frame1-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sec6-frame1-top>p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.4399999976158142px;
+    text-align: center;
+}
+
 .sec6-frame1-top>h1 {
     font-size: 46px;
     font-weight: 700;
@@ -885,7 +892,7 @@ p#tick-contant {
     text-align: center;
 }
 
-.sec6-frame3>p {
+.sec6>p {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -944,7 +951,7 @@ p#tick-contant {
     display: flex;
     flex-direction: column;
     gap: 27px;
-    width: 173px;
+    width: 153px;
 }
 
 #sec7-frame2-box {
@@ -979,24 +986,17 @@ p#tick-contant {
     gap: 1px;
 }
 
-.container1 {
+/* .container1 {
     margin-left: 90px;
     margin-right: 8px;
-}
+} */
 
-.sec7-mainframe2 {
-    width: 100%;
-    padding: 32px 0px 54px 0px;
-    border-top: 1px solid #E4E4E7;
-    display: flex;
-    justify-content: space-between;
-    gap: 348px;
-}
 
 .sec7-mainframe2-left {
     display: flex;
     justify-content: space-between;
     gap: 4px;
+    align-items: center;
 }
 
 .sec7-left-content2>h4 {
@@ -1014,7 +1014,7 @@ p#tick-contant {
 
 .sec7-left-content3 {
     width: 12px;
-    height: 12px;
+    /* height: 12px; */
 }
 
 .mainframe-frame1 {
@@ -1037,8 +1037,61 @@ p#tick-contant {
 }
 
 #right-p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+
+#sec7-content {
+    align-content: center;
+}
+
+.sec7-mainframe2 {
+    width: 100%;
+    padding: 32px 0px 54px 0px;
+    border-top: 1px solid #E4E4E7;
+    display: flex;
+    justify-content: space-between;
+    gap: 266px;
+}
+
+.top1 {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+}
+
+.top1>p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    text-align: center;
+}
+
+#b1:hover {
+    background-color: #333;
+}
+
+#try:hover {
+    background-color: #333;
+}
+
+.img-plus {
+    align-content: center;
+}
+
+#button-sec3:hover {
+    background-color: #333;
+}
+
+#button-sec3-frame3-card2:hover {
+    background-color: #000000;
+    color: white;
+}
+
+#button-sec3-frame3:hover {
+    background-color: #333;
 }
