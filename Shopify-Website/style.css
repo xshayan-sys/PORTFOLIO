@@ -465,7 +465,7 @@ p#tick-contant {
 .frame2-second-content {
     display: flex;
     justify-content: space-between;
-    width: 293px;
+    /* width: 293px; */
     padding: 12px 24px;
     gap: 12px;
     border-radius: 30px;
@@ -595,7 +595,7 @@ p#tick-contant {
     line-height: 24px;
     text-align: center;
     background: #EFFBF7;
-    padding: 12px 0px 12px 0px;
+    padding: 11.5px 0px ;
     border-bottom: 1px solid #1EDCD6;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -609,12 +609,12 @@ p#tick-contant {
     gap: 46px;
     align-items: center;
     padding-top: 9px;
+    padding-bottom: 46px;
 }
 
 .sec3-card1 {
     border: 1px solid #1EDCD6;
     width: 597px;
-    height: 409px;
     border-radius: 14px;
 }
 
@@ -724,7 +724,7 @@ p#tick-contant {
 }
 
 #button-sec3-frame3 {
-    padding: 12px 24px 12px 24px;
+    padding: 12px 22.5px;
     border-radius: 30px;
     border: 1px;
     background: #000000;
@@ -817,7 +817,7 @@ p#tick-contant {
 }
 
 .sec5-box1 {
-    padding: 50px;
+    padding: 39.5px 40px;
     border-bottom: 1px solid #FFFFFF;
     justify-content: space-between;
     display: flex;
@@ -905,7 +905,7 @@ p#tick-contant {
 
 .section6 {
     padding: 128px 0;
-    background: #00feff4f;
+    background: linear-gradient( #09B5DC , #1EDC9C);
 }
 
 .section7 {
@@ -942,7 +942,7 @@ p#tick-contant {
     display: flex;
     flex-direction: column;
     gap: 27px;
-    width: 153px;
+    width: 158px;
 }
 
 #sec7-frame2-box {
@@ -1079,4 +1079,9 @@ p#tick-contant {
 
 #button-sec3-frame3:hover {
     background-color: #333;
+}
+#mostpopulur{
+    position: absolute;
+    top: 621px;
+    left: 206px;
 }
