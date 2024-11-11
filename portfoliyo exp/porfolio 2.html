@@ -9,37 +9,14 @@
 </head>
 
 <body>
-    <script>
-        /* Scroll Event for Sticky Header */
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        const text = "SYED MUHAMMAD ATHAR";
-        const typewriterElement = document.getElementById("typewriter");
-
-        function startTypingEffect() {
-            typewriterElement.textContent = text;
-            typewriterElement.style.width = "0"; // Reset for repeat
-            typewriterElement.style.animation = "none"; // Reset animation
-
-            setTimeout(() => {
-                typewriterElement.style.animation = "typing 3s steps(30, end), blink 0.6s step-end infinite";
-            }, 50); // Small delay before re-triggering the animation
-        }
-
-        // Run the typing effect initially and set an interval for repetition
-        startTypingEffect();
-        setInterval(startTypingEffect, 5000); // Adjust timing as needed
-    </script>
     <header>
-        <div class="logo">Your Product</div>
+        <div class="logo"><img src="logo2.png" alt="" style="width: 100px; height: 100px;"> VELOXIFORGE</div>
         <nav>
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -47,7 +24,8 @@
 
     <section id="hero">
         <h1 id="typewriter"></h1>
-        <p>Innovative. Portable. Reliable.</p>
+        <p>WEB DEVELOPER / VIDEO EDITOR</p>
+        <!-- Innovative. Portable. Reliable. -->
         <button>Shop Now</button>
     </section>
 
@@ -109,6 +87,30 @@
     <footer>
         <p>&copy; 2024 Your Product. All rights reserved.</p>
     </footer>
+    <script>
+        /* Scroll Event for Sticky Header */
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const text = "SYED MUHAMMAD ATHAR";
+        const typewriterElement = document.getElementById("typewriter");
+
+        function startTypingEffect() {
+            typewriterElement.textContent = text;
+            typewriterElement.style.width = "0"; // Reset for repeat
+            typewriterElement.style.animation = "none"; // Reset animation
+
+            setTimeout(() => {
+                typewriterElement.style.animation = "typing 3s steps(30, end), blink 0.6s step-end infinite";
+            }, 50); // Small delay before re-triggering the animation
+        }
+
+        // Run the typing effect initially and set an interval for repetition
+        startTypingEffect();
+        setInterval(startTypingEffect, 5000); // Adjust timing as needed
+    </script>
 </body>
 
 </html>
