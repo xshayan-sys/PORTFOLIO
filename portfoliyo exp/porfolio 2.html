@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="portfolio 2.css">
+</head>
+
+<body>
+    <script>
+        /* Scroll Event for Sticky Header */
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const text = "SYED MUHAMMAD ATHAR";
+        const typewriterElement = document.getElementById("typewriter");
+
+        function startTypingEffect() {
+            typewriterElement.textContent = text;
+            typewriterElement.style.width = "0"; // Reset for repeat
+            typewriterElement.style.animation = "none"; // Reset animation
+
+            setTimeout(() => {
+                typewriterElement.style.animation = "typing 3s steps(30, end), blink 0.6s step-end infinite";
+            }, 50); // Small delay before re-triggering the animation
+        }
+
+        // Run the typing effect initially and set an interval for repetition
+        startTypingEffect();
+        setInterval(startTypingEffect, 5000); // Adjust timing as needed
+    </script>
+    <header>
+        <div class="logo">Your Product</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1 id="typewriter"></h1>
+        <p>Innovative. Portable. Reliable.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-container">
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/150" alt="Feature 1">
+                <h3>High Quality</h3>
+                <p>Crafted with premium materials.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/150" alt="Feature 2">
+                <h3>Portable</h3>
+                <p>Take it anywhere, anytime.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/150" alt="Feature 3">
+                <h3>Affordable</h3>
+                <p>Great value at a great price.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>[Product Name] was designed to simplify your life and enhance your daily tasks.</p>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-item">
+                <p>"This service exceeded my expectations! Highly recommended."</p>
+                <h4>- John Doe</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"Amazing quality and outstanding customer support. Five stars!"</p>
+                <h4>- Jane Smith</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"I'm so happy with the results. Will definitely use this again."</p>
+                <h4>- Emily Johnson</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Product. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
