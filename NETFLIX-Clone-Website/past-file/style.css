@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bgimg {
+    background-image: url('bg.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+
+
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
+
+/* navbar */
+.logo1>img {
+    width: 11.25rem;
+    height: 4.5rem;
+}
+
+.button1>button {
+    background: #000;
+    border-radius: calc(0.25rem - 0.0625rem);
+    border-width: 0.0625rem;
+    border-style: none;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-weight: 500;
+    width: 75.59px;
+    height: 32px;
+
+}
+
+.section01>nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    align-items: center;
+}
+
+/* section01  */
+.sec1-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.sec1-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.sec1-content button {
+    padding: 12px 30px;
+    margin-top: 20px;
+    background-color: #e50914;
+    /* Netflix red */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sec1-content button:hover {
+    background-color: #f40612;
+    /* Darker red on hover */
+}
+
+/* section2 */
+.section02 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2-frame1-top>h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 125%;
+    width: 588px;
+    text-align: center;
+}
+
+.sec2-frame1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.sec2-frame1-bottom>p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 32px;
+}
+
+.sec2-frame2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2-frame2>p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sec2-frame2-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.inbox>#sec2-textbox {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 337.27px;
+    padding: 14px 16px;
+    background-color: rgb(20 17 17 / 75%);
+    border-radius: 0.5rem;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.inbox ::-webkit-input-placeholder {
+    color: white;
+}
+.sec2-frame2-bottom-button>#b{
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    outline: none;
+    border: none;
+    padding: 14px 28px;
+}
+.sec2-frame2-bottom-button{
+    align-content: center;
+  
+}
+.arrow{
+width: 13px;
+height: 18px;
+padding-left: 12px;
+}
