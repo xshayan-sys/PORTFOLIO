@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+  }
+  .rect {
+    width: 334.5px;
+    height: 223px;
+    background: #34EFEE;
+    text-align: center;
+    line-height: 223px;
+  }
+  .rect:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 334.5px;
+    height: 15px;
+    background: #FFFFFF;
+    left: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }

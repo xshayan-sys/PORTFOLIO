@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Hide the checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .arrow {
+            font-size: 50px;
+            cursor: pointer;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .arrow:hover {
+            transform: scale(1.2);
+        }
+
+        /* Hide arrow2 when the checkbox is checked */
+        input[type="checkbox"]:checked ~ .arrow2 {
+            display: none;
+        }
+
+        /* Hide arrow1 when the checkbox is unchecked */
+        input[type="checkbox"]:not(:checked) ~ .arrow1 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="toggle">
+
+    <!-- Arrow elements -->
+    <label for="toggle" class="arrow arrow1">⬅️</label>
+    <label for="toggle" class="arrow arrow2">➡️</label>
+</body>
+</html>
+

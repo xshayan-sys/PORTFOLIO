@@ -1,0 +1,72 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url(PK-en-20241118-TRIFECTA-perspective_ab4d2a47-03af-48bd-878f-474561f94bdc_large.jpg);
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-image: url(PK-en-20241118-TRIFECTA-perspective_ab4d2a47-03af-48bd-878f-474561f94bdc_large.jpg);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+    width: 1304px;
+    height: 536px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 16%;
+    height: 81%;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-button>button {
+    background: #000;
+    border-radius: calc(0.25rem - 0.0625rem);
+    border-width: 0.0625rem;
+    border-style: none;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-weight: 500;
+    width: 75.59px;
+    height: 32px;
+}
